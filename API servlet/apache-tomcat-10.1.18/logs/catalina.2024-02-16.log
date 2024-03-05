@@ -1,0 +1,97 @@
+16-Feb-2024 14:11:19.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.18
+16-Feb-2024 14:11:19.901 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 5 2024 14:39:40 UTC
+16-Feb-2024 14:11:19.909 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.18.0
+16-Feb-2024 14:11:19.910 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+16-Feb-2024 14:11:19.911 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+16-Feb-2024 14:11:19.914 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+16-Feb-2024 14:11:19.919 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-17
+16-Feb-2024 14:11:19.932 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.6+9-LTS-190
+16-Feb-2024 14:11:19.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+16-Feb-2024 14:11:19.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18
+16-Feb-2024 14:11:19.935 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18
+16-Feb-2024 14:11:19.961 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\conf\logging.properties
+16-Feb-2024 14:11:19.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Feb-2024 14:11:19.963 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+16-Feb-2024 14:11:19.963 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+16-Feb-2024 14:11:19.963 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+16-Feb-2024 14:11:19.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+16-Feb-2024 14:11:19.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+16-Feb-2024 14:11:19.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+16-Feb-2024 14:11:19.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+16-Feb-2024 14:11:19.968 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18
+16-Feb-2024 14:11:19.969 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18
+16-Feb-2024 14:11:19.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\temp
+16-Feb-2024 14:11:19.981 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+16-Feb-2024 14:11:20.009 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+16-Feb-2024 14:11:20.843 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+16-Feb-2024 14:11:20.945 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1563] milliseconds
+16-Feb-2024 14:11:21.141 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+16-Feb-2024 14:11:21.142 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.18]
+16-Feb-2024 14:11:21.174 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\docs]
+16-Feb-2024 14:11:22.283 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\docs] has finished in [1,107] ms
+16-Feb-2024 14:11:22.284 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\examples]
+16-Feb-2024 14:11:23.490 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\examples] has finished in [1,206] ms
+16-Feb-2024 14:11:23.491 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\host-manager]
+16-Feb-2024 14:11:23.612 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\host-manager] has finished in [120] ms
+16-Feb-2024 14:11:23.612 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\manager]
+16-Feb-2024 14:11:23.702 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\manager] has finished in [89] ms
+16-Feb-2024 14:11:23.703 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\ROOT]
+16-Feb-2024 14:11:23.770 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\ROOT] has finished in [68] ms
+16-Feb-2024 14:11:23.783 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+16-Feb-2024 14:11:23.996 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3048] milliseconds
+16-Feb-2024 14:14:37.349 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\webapp.war]
+16-Feb-2024 14:14:37.663 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\webapp.war] has finished in [315] ms
+16-Feb-2024 18:16:30.200 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+16-Feb-2024 18:16:30.225 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+16-Feb-2024 18:16:30.296 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+16-Feb-2024 18:16:30.321 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+16-Feb-2024 18:16:37.584 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.18
+16-Feb-2024 18:16:37.608 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 5 2024 14:39:40 UTC
+16-Feb-2024 18:16:37.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.18.0
+16-Feb-2024 18:16:37.610 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+16-Feb-2024 18:16:37.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+16-Feb-2024 18:16:37.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+16-Feb-2024 18:16:37.611 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-17
+16-Feb-2024 18:16:37.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.6+9-LTS-190
+16-Feb-2024 18:16:37.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+16-Feb-2024 18:16:37.613 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18
+16-Feb-2024 18:16:37.613 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18
+16-Feb-2024 18:16:37.655 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\conf\logging.properties
+16-Feb-2024 18:16:37.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Feb-2024 18:16:37.659 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+16-Feb-2024 18:16:37.659 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+16-Feb-2024 18:16:37.660 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+16-Feb-2024 18:16:37.661 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+16-Feb-2024 18:16:37.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+16-Feb-2024 18:16:37.667 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+16-Feb-2024 18:16:37.668 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+16-Feb-2024 18:16:37.669 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18
+16-Feb-2024 18:16:37.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18
+16-Feb-2024 18:16:37.673 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\temp
+16-Feb-2024 18:16:37.682 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.6] using APR version [1.7.4].
+16-Feb-2024 18:16:37.701 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+16-Feb-2024 18:16:38.863 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+16-Feb-2024 18:16:38.994 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1989] milliseconds
+16-Feb-2024 18:16:39.186 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+16-Feb-2024 18:16:39.189 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.18]
+16-Feb-2024 18:16:39.254 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\webapp.war]
+16-Feb-2024 18:16:40.579 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [131] milliseconds.
+16-Feb-2024 18:16:40.654 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\webapp.war] has finished in [1,399] ms
+16-Feb-2024 18:16:40.658 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\docs]
+16-Feb-2024 18:16:40.847 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\docs] has finished in [190] ms
+16-Feb-2024 18:16:40.849 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\examples]
+16-Feb-2024 18:16:42.189 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\examples] has finished in [1,340] ms
+16-Feb-2024 18:16:42.190 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\host-manager]
+16-Feb-2024 18:16:42.305 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\host-manager] has finished in [114] ms
+16-Feb-2024 18:16:42.306 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\manager]
+16-Feb-2024 18:16:42.423 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\manager] has finished in [117] ms
+16-Feb-2024 18:16:42.447 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\ROOT]
+16-Feb-2024 18:16:42.538 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\ROOT] has finished in [97] ms
+16-Feb-2024 18:16:42.548 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+16-Feb-2024 18:16:42.700 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3697] milliseconds
+16-Feb-2024 18:17:10.446 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\webapp-1.0-SNAPSHOT.war]
+16-Feb-2024 18:17:10.802 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Dramirez\Desktop\Java-EE-git\API servlet\apache-tomcat-10.1.18\webapps\webapp-1.0-SNAPSHOT.war] has finished in [356] ms
+16-Feb-2024 18:19:43.355 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+16-Feb-2024 18:19:43.372 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+16-Feb-2024 18:19:43.438 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+16-Feb-2024 18:19:43.467 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
