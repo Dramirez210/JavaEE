@@ -1,0 +1,9 @@
+mx\uacm\apiservlet\webapp\session\services\LoginService.class
+mx\uacm\apiservlet\webapp\session\services\ProductoService.class
+mx\uacm\apiservlet\webapp\session\controllers\LoginServlet.class
+mx\uacm\apiservlet\webapp\session\services\LoginServiceSessionImpl.class
+mx\uacm\apiservlet\webapp\session\services\LoginServiceCookieImpl.class
+mx\uacm\apiservlet\webapp\session\controllers\LogoutServlet.class
+mx\uacm\apiservlet\webapp\session\controllers\ProductoServlet.class
+mx\uacm\apiservlet\webapp\session\models\Producto.class
+mx\uacm\apiservlet\webapp\session\services\ProductoServiceImpl.class
