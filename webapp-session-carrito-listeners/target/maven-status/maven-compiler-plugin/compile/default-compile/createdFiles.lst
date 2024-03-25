@@ -1,0 +1,14 @@
+mx\uacm\apiservlet\webapp\headers\controllers\AgregarCarroServlet.class
+mx\uacm\apiservlet\webapp\headers\models\Carro.class
+mx\uacm\apiservlet\webapp\headers\services\ProductoServiceImpl.class
+mx\uacm\apiservlet\webapp\headers\services\LoginServiceSessionImpl.class
+mx\uacm\apiservlet\webapp\headers\services\ProductoService.class
+mx\uacm\apiservlet\webapp\headers\controllers\ProductoServlet.class
+mx\uacm\apiservlet\webapp\headers\models\Producto.class
+mx\uacm\apiservlet\webapp\headers\controllers\ActualizarCarroServlet.class
+mx\uacm\apiservlet\webapp\headers\controllers\LogoutServlet.class
+mx\uacm\apiservlet\webapp\headers\models\ItemCarro.class
+mx\uacm\apiservlet\webapp\headers\services\LoginService.class
+mx\uacm\apiservlet\webapp\headers\services\LoginServiceCookieImpl.class
+mx\uacm\apiservlet\webapp\headers\controllers\LoginServlet.class
+mx\uacm\apiservlet\webapp\headers\controllers\VerCarroServlet.class
