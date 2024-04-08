@@ -30,10 +30,13 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li>
-            <a class="dropdown-item"
-            href="${pageContext.request.contextPath}/${not empty sessionScope.username? "logout": "login"}">
-            ${not empty sessionScope.username? "Logout": "Login"}
-            </a>
+                <a class="dropdown-item"
+                href="${pageContext.request.contextPath}/${not empty sessionScope.username? "logout": "login"}">
+                ${not empty sessionScope.username? "Logout": "Login"}
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="${pageContext.request.contextPath}/usuarios/form">Crear usuario</a>
             </li>
           </ul>
         </li>
