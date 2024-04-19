@@ -1,25 +1,21 @@
 package mx.uacm.apiservlet.webapp.headers.services;
 
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+import mx.uacm.apiservlet.webapp.headers.configs.ProductoServicePrincipal;
+import mx.uacm.apiservlet.webapp.headers.configs.Service;
+import mx.uacm.apiservlet.webapp.headers.interceptors.Logging;
 import mx.uacm.apiservlet.webapp.headers.models.Categoria;
 import mx.uacm.apiservlet.webapp.headers.models.Producto;
-import mx.uacm.apiservlet.webapp.headers.repositories.CaterogiaRepositoryImpl;
-import mx.uacm.apiservlet.webapp.headers.repositories.ProductoRepositoryJdbcImpl;
-import mx.uacm.apiservlet.webapp.headers.repositories.Repository;
+import mx.uacm.apiservlet.webapp.headers.repositories.CrudRepository;
 
-import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
+@Service
+@ProductoServicePrincipal
 public class ProductoServiceJdbcImpl implements ProductoService{
-    private Repository<Producto> repositoryProductoJdbc;
-    private Repository<Categoria> repositoryCategoriaJdbc;
-
-    public ProductoServiceJdbcImpl(Connection connection) {
-        this.repositoryProductoJdbc = new ProductoRepositoryJdbcImpl(connection);
-        this.repositoryCategoriaJdbc = new CaterogiaRepositoryImpl(connection);
-    }
-
     @Override
     public List<Producto> listar() {
         try {
@@ -28,6 +24,11 @@ public class ProductoServiceJdbcImpl implements ProductoService{
             throw new ServiceJdbcException(e.getMessage(), e.getCause()); //excepcion personalizada
         }
     }
+    @Inject
+    private CrudRepository<Producto> repositoryProductoJdbc;
+
+    @Inject
+    private CrudRepository<Categoria> repositoryCategoriaJdbc;
 
     @Override
     public Optional<Producto> porId(Long id) {

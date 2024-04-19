@@ -1,16 +1,21 @@
 package mx.uacm.apiservlet.webapp.headers.repositories;
 
+import jakarta.inject.Inject;
+import mx.uacm.apiservlet.webapp.headers.configs.MySQLConn;
+import mx.uacm.apiservlet.webapp.headers.configs.Repository;
 import mx.uacm.apiservlet.webapp.headers.models.Categoria;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CaterogiaRepositoryImpl implements Repository<Categoria>{
+@Repository
+public class CaterogiaRepositoryImpl implements CrudRepository<Categoria> {
 
     private Connection conn;
 
-    public CaterogiaRepositoryImpl(Connection conn) {
+    @Inject //Inyeccion via constructor
+    public CaterogiaRepositoryImpl(@MySQLConn Connection conn) {
         this.conn = conn;
     }
 

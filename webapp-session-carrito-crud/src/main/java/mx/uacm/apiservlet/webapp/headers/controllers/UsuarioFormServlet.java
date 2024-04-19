@@ -1,5 +1,6 @@
 package mx.uacm.apiservlet.webapp.headers.controllers;
 
+import jakarta.inject.Inject;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -17,6 +18,8 @@ import java.util.Optional;
 
 @WebServlet("/usuarios/form")
 public class UsuarioFormServlet extends HttpServlet {
+    @Inject
+    UsuarioService serviceUsuario;
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Long id;
@@ -25,7 +28,6 @@ public class UsuarioFormServlet extends HttpServlet {
         }catch (NumberFormatException e){
             id = 0L;
         }
-        UsuarioService serviceUsuario = getUsuarioService(req);
         Usuario usuario = new Usuario();
         if (id > 0){
             Optional<Usuario> o = serviceUsuario.porId(id);
@@ -41,9 +43,6 @@ public class UsuarioFormServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        UsuarioService serviceUsuario = getUsuarioService(req);
-
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         String passwordConfirmacion = req.getParameter("password2");
@@ -90,13 +89,5 @@ public class UsuarioFormServlet extends HttpServlet {
             req.setAttribute("title", req.getAttribute("title") + ": Creación de Usuario");
             getServletContext().getRequestDispatcher("/formUsuarios.jsp").forward(req, resp);
         }
-
     }
-
-    private static UsuarioService getUsuarioService(HttpServletRequest req) {
-        Connection conn = (Connection) req.getAttribute("conn");
-        UsuarioService service = new UsuarioServiceImpl(conn);
-        return service;
-    }
-
 }

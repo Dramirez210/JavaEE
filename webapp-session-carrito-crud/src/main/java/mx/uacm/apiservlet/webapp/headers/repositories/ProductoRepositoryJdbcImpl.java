@@ -1,19 +1,34 @@
 package mx.uacm.apiservlet.webapp.headers.repositories;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+import jakarta.inject.Inject;
+import mx.uacm.apiservlet.webapp.headers.configs.MySQLConn;
+import mx.uacm.apiservlet.webapp.headers.configs.Repository;
 import mx.uacm.apiservlet.webapp.headers.models.Categoria;
 import mx.uacm.apiservlet.webapp.headers.models.Producto;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
-public class ProductoRepositoryJdbcImpl implements Repository<Producto>{
+@Repository
+public class ProductoRepositoryJdbcImpl implements CrudRepository<Producto> {
+    @Inject
+    private Logger log;
+    @Inject
+    //@Named("conn")
+    @MySQLConn
     private Connection conn;
-
-    public ProductoRepositoryJdbcImpl(Connection conn) {
-        this.conn = conn;
+    @PostConstruct
+    public void inicializar(){
+        log.info("Inicializando beans " + this.getClass().getName());
     }
-
+    @PreDestroy
+    public void destruir(){
+        log.info("Destruyendo el beans "+this.getClass().getName());
+    }
     @Override
     public List<Producto> listar() throws SQLException {
         List<Producto> productos = new ArrayList<>();

@@ -1,18 +1,20 @@
 package mx.uacm.apiservlet.webapp.headers.services;
 
+import jakarta.inject.Inject;
+import mx.uacm.apiservlet.webapp.headers.configs.Service;
 import mx.uacm.apiservlet.webapp.headers.models.Usuario;
 import mx.uacm.apiservlet.webapp.headers.repositories.UsuarioRepository;
-import mx.uacm.apiservlet.webapp.headers.repositories.UsuarioRepositoryImpl;
 
-import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Optional;
 
+@Service
 public class UsuarioServiceImpl implements UsuarioService{
     private UsuarioRepository usuarioRepository;
 
-    public UsuarioServiceImpl(Connection connection) {
-        this.usuarioRepository = new UsuarioRepositoryImpl(connection);
+    @Inject
+    public UsuarioServiceImpl( UsuarioRepository usuarioRepository) {
+        this.usuarioRepository = usuarioRepository;
     }
 
     @Override

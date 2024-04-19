@@ -1,5 +1,8 @@
 package mx.uacm.apiservlet.webapp.headers.services;
 
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.inject.Alternative;
+import mx.uacm.apiservlet.webapp.headers.configs.ProductoServicePrincipal;
 import mx.uacm.apiservlet.webapp.headers.models.Categoria;
 import mx.uacm.apiservlet.webapp.headers.models.Producto;
 
@@ -7,6 +10,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+//@Alternative
+//@ApplicationScoped
+//@ProductoServicePrincipal
 public class ProductoServiceImpl implements ProductoService{
     @Override
     public List<Producto> listar() {

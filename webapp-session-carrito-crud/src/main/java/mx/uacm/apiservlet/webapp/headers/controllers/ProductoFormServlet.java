@@ -1,17 +1,18 @@
 package mx.uacm.apiservlet.webapp.headers.controllers;
 
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import mx.uacm.apiservlet.webapp.headers.configs.ProductoServicePrincipal;
 import mx.uacm.apiservlet.webapp.headers.models.Categoria;
 import mx.uacm.apiservlet.webapp.headers.models.Producto;
 import mx.uacm.apiservlet.webapp.headers.services.ProductoService;
-import mx.uacm.apiservlet.webapp.headers.services.ProductoServiceJdbcImpl;
 
 import java.io.IOException;
-import java.sql.Connection;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
@@ -22,6 +23,9 @@ import java.util.Optional;
 
 @WebServlet("/productos/form")
 public class ProductoFormServlet extends HttpServlet {
+    @Inject
+    @ProductoServicePrincipal
+    private ProductoService service;
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Long id;
@@ -30,7 +34,6 @@ public class ProductoFormServlet extends HttpServlet {
         }catch (NumberFormatException e){
             id = 0L;
         }
-        ProductoService service = getProductoService(req);
 
         Producto producto = new Producto();
         producto.setCategoria(new Categoria());
@@ -51,7 +54,6 @@ public class ProductoFormServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        ProductoService service = getProductoService(req);
         String nombre = req.getParameter("nombre");
         Double precio;
         try{
@@ -126,11 +128,5 @@ public class ProductoFormServlet extends HttpServlet {
             req.setAttribute("title", req.getAttribute("title") + ": Formulario de productos");
             getServletContext().getRequestDispatcher("/form.jsp").forward(req, resp);
         }
-    }
-
-    private static ProductoService getProductoService(HttpServletRequest req) {
-        Connection conn = (Connection) req.getAttribute("conn");
-        ProductoService service = new ProductoServiceJdbcImpl(conn);
-        return service;
     }
 }

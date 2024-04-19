@@ -1,5 +1,6 @@
 package mx.uacm.apiservlet.webapp.headers.controllers;
 
+import jakarta.inject.Inject;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
@@ -7,19 +8,19 @@ import mx.uacm.apiservlet.webapp.headers.models.Usuario;
 import mx.uacm.apiservlet.webapp.headers.services.LoginService;
 import mx.uacm.apiservlet.webapp.headers.services.LoginServiceSessionImpl;
 import mx.uacm.apiservlet.webapp.headers.services.UsuarioService;
-import mx.uacm.apiservlet.webapp.headers.services.UsuarioServiceImpl;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
 import java.util.Optional;
 
 @WebServlet({"/login", "/login.html"})
 public class LoginServlet extends HttpServlet {
-
+    @Inject
+    private UsuarioService usuarioService;
+    @Inject
+    private LoginService auth;
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        LoginService auth = new LoginServiceSessionImpl();
         Optional<String> usernameOptional = auth.getUsername(req);
 
         if (usernameOptional.isPresent()) {
@@ -50,13 +51,10 @@ public class LoginServlet extends HttpServlet {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
 
-        UsuarioService service = new UsuarioServiceImpl((Connection) req.getAttribute("conn"));
-        Optional<Usuario> usuarioOptional = service.login(username, password);
+        Optional<Usuario> usuarioOptional = usuarioService.login(username, password);
         if (usuarioOptional.isPresent()) {
-
             HttpSession session = req.getSession();
             session.setAttribute("username", username);
-
             resp.sendRedirect(req.getContextPath() + "/login.html");
         } else {
             resp.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Lo sentimos no esta autorizado para ingresar a esta página!");

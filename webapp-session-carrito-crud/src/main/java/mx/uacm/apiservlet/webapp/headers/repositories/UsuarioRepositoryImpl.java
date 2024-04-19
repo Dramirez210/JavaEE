@@ -1,18 +1,20 @@
 package mx.uacm.apiservlet.webapp.headers.repositories;
 
-import mx.uacm.apiservlet.webapp.headers.models.Producto;
+import jakarta.inject.Inject;
+import mx.uacm.apiservlet.webapp.headers.configs.MySQLConn;
+import mx.uacm.apiservlet.webapp.headers.configs.Repository;
 import mx.uacm.apiservlet.webapp.headers.models.Usuario;
 
 import java.sql.*;
 import java.util.List;
 
+@Repository
 public class UsuarioRepositoryImpl implements UsuarioRepository{
 
+    @Inject
+    //@Named("conn")
+    @MySQLConn
     private Connection conn;
-
-    public UsuarioRepositoryImpl(Connection conn) {
-        this.conn = conn;
-    }
 
     @Override
     public List<Usuario> listar() throws SQLException {
